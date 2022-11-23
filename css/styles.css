@@ -1,0 +1,63 @@
+:root {
+    --white-transparent: rgba(255, 255, 255, 0.7);
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(../font/Norse-Bold.otf);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: var(--white-transparent);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+#main-container {
+    display: flex;
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    background-image: url("../img/leaf-bg.jpeg");
+    background-size: cover;
+    min-width:30vw;
+    color: var(--white-transparent);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+header img {
+    width: 20%;
+}
+
+.banner{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: norse-bold;
+    top: 15%;
+    padding:15px 0px;
+
+    
+}
