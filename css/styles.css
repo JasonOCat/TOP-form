@@ -36,7 +36,7 @@ header {
     position: relative;
     background-image: url("../img/leaf-bg.jpeg");
     background-size: cover;
-    min-width:30vw;
+    min-width:40vw;
     color: var(--white-transparent);
     font-size: 0.8rem;
     text-align: center;
@@ -60,4 +60,28 @@ header img {
     padding:15px 0px;
 
     
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+}
+
+#intro {
+    margin: 10px 10px;
+}
+
+#div-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin:0px 15px;
+}
+
+#div-form > div {
+    display: flex;
+    flex-direction: column;
 }
