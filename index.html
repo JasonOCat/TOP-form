@@ -25,46 +25,64 @@
         <main>
             <div id="intro">
                 This is not a real online service! You know you need something like this in your life to help you
-                realize your deepest dreams. Sign up now to get started. You know you want to.
+                realize your deepest dreams. Sign up now to get started.
+                <br/>
+                <br/>
+                <p class="you-know">You know you want to.</p>
             </div>
             <div id="form">
-                
+        
+                <form action="#" method="get">
 
-                <form action="">
+                    <div class="form-form">
 
-                    <p style="padding-left:15px;">Let's do this</p>
-                    <div id="div-form">
-                        
-                        <div>
-                            <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name" name="first_name">
+                    
+                        <div class="form-form-form">
+                            <p class="lets-go">Let's do this</p>
+                            
+                            <div id="div-form">
+                            
+                                <div>
+                                    <label for="first_name">FIRST NAME</label>
+                                    <input type="text" id="first_name" name="first_name"
+                                    pattern="[a-zA-Z-\s]+"
+                                    required>
+                                </div>
+                                <div>
+                                    <label for="last_name">LAST NAME</label>
+                                    <input type="text" id="last_name" name="last_name"
+                                    pattern="[a-zA-Z-\s]+"
+                                    required>
+                                </div>
+                                <div>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div>
+                                    <label for="phonenumber">PHONE NUMBER</label>
+                                    <input type="text" id="phonenumber" name="phonenumber"
+                                    pattern="\d{10}"
+                                    required>
+                                </div>
+                                <div>
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" id="password" name="password" class="error" required>
+                                    <p class="error-pass" hidden>* Passwords do not match</p>
+                                </div>
+                                <div>
+                                    <label for="check_password">PASSWORD</label>
+                                    <input type="password" id="check_password" name="check_password" class="error" required>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <label for="first_name">LAST NAME</label>
-                            <input type="text" id="last_name" name="last_name">
+                        <div id="login">
+                            <input type="submit" class="btn" value="Create Account" disabled="disabled">
                         </div>
-                        <div>
-                            <label for="first_name">EMAIL</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div>
-                            <label for="first_name">PHONE NUMBER</label>
-                            <input type="tel" id="phonenumber" name="phonenumber">
-                        </div>
-                        <div>
-                            <label for="first_name">PASSWORD</label>
-                            <input type="password" id="password" name="password">
-                        </div>
-                        <div>
-                            <label for="first_name">PASSWORD</label>
-                            <input type="password" id="confirm_password" name="confirm_password">
-                        </div>
+                        <p class="account">Already have an account? <a href="#" style="color:#596D48; text-decoration: none">Log in</a></p>
                     </div>
                 </form>
             </div>
-            <div id="login">
-                Create account
-            </div>
+
         </main>
     </div>
 </body>

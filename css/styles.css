@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
 :root {
     --white-transparent: rgba(255, 255, 255, 0.7);
+    font-family: 'Roboto', sans-serif;
 }
 
 @font-face {
@@ -68,20 +71,120 @@ main {
     flex: 1;
     width: 100%;
     justify-content: center;
+    background-color: whitesmoke;
 }
 
 #intro {
-    margin: 10px 10px;
+    margin: 10px 40px;
+    padding-bottom: 35px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 80%;
 }
+
+.lets-go {
+    margin-bottom: 20px;
+    font-size:1.2rem;
+    font-weight: 600;
+}
+
+.you-know {
+    font-style: italic;
+}
+
+
 
 #div-form {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    margin:0px 15px;
+    gap: 1.5rem 4rem;
+    width: 70%;
+    margin-bottom: 30px;
 }
 
 #div-form > div {
     display: flex;
     flex-direction: column;
+    width: 35%;
 }
+
+.form-form {
+    display:flex;
+    flex-direction: column;
+}
+
+.form-form-form {
+    background-color: white;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 40px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: grey;
+    margin-bottom: 3px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 6px 8px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+input:required:valid {
+    border: 1px solid green;  
+}
+
+input:required:invalid {
+    border: 1px solid red;
+}
+
+input:required {
+    border: 1px solid #E5E7EB;  
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+input.valid {
+    border: 1px solid green;
+}
+
+.error-pass {
+    color: red;
+    font-size: 0.7rem;;
+}
+
+input:disabled {
+    opacity: 0.5;
+}
+
+
+
+
+.btn {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    border-radius: 7px;
+    padding: 13px 51px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.account {
+    margin-left: 40px;
+    font-weight: 400;
+}
+
